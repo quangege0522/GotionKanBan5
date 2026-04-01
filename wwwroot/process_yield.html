@@ -148,13 +148,11 @@
                 .then(res => {
                     const data = res.data;
 
-                    const headerRow = document.getElementById('headerRow');
-                    //const valueRow = document.getElementById('valueRow');
+                    const headerRow = document.getElementById('headerRow');                  
                     const planRow = document.getElementById('planRow');
                     const actualRow = document.getElementById('actualRow');
 
-                    headerRow.innerHTML = '';
-                    //valueRow.innerHTML = '';
+                    headerRow.innerHTML = '';                  
                     planRow.innerHTML = '';
                     actualRow.innerHTML = '';
 
@@ -169,11 +167,7 @@
 
                     
                     data.forEach(d => {
-                        //const td = document.createElement('td');
-                        //td.textContent = d.yield;
-                        //td.style.cssText =
-                        //    'padding:8px;border:1px solid #2c4a6b;';
-                        //valueRow.appendChild(td);
+                        
 
                         // 计划
                         const tdPlan = document.createElement('td');
@@ -269,66 +263,6 @@
                             }
                         ]
 
-                        //series: [
-                           
-                        //    {
-                        //        name: '产量',
-                        //        type: 'bar',
-                        //        data: data.map(d => d.yield),
-                        //        barWidth: '45%',
-                        //        barGap: '-100%',
-
-                        //        itemStyle: {
-                        //            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                        //                { offset: 0, color: '#1f4fa3' },
-                        //                { offset: 1, color: '#163a7a' }
-                        //            ]),
-
-                                    
-                        //            borderColor: '#0d2a4d',
-                        //            borderWidth: 1,
-
-                        //            borderRadius: [0, 0, 0, 0],
-
-                        //            shadowColor: 'rgba(0,0,0,0.45)',
-                        //            shadowBlur: 6,
-                        //            shadowOffsetY: 4
-                        //        },
-
-                        //        z: 1
-                        //    },
-
-                            
-                        //    {
-                        //        name: '顶面',
-                        //        type: 'bar',
-                        //        data: data.map(d => d.yield),
-                        //        barWidth: '45%',
-                        //        barGap: '-100%',
-
-                        //        itemStyle: {
-                        //            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                        //                { offset: 0, color: '#5a9cff' },
-                        //                { offset: 1, color: '#3b7dd8' }
-                        //            ]),
-
-                                    
-                        //            borderColor: '#7cb9ff',
-                        //            borderWidth: 1,
-
-                        //            borderRadius: [4, 4, 0, 0]
-                        //        },
-
-                        //        label: {
-                        //            show: true,
-                        //            position: 'top',
-                        //            color: '#fff',
-                        //            fontWeight: 'bold'
-                        //        },
-
-                        //        z: 2
-                        //    }
-                        //]
                     };
 
                     chart.setOption(option, false);

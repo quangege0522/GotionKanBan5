@@ -16,25 +16,7 @@ namespace WebAppTest1.Controllers
             {
                 var data = new[]
                 {
-                    //new { process = "正极合浆", yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "正极涂布", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "正极辊分", yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "正极激光切", yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "负极合浆", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "负极涂布", yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "负极辊分", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "负极激光切", yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "叠片",yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "组装",yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "一次注液", yield = Random.Shared.Next(1000,1500) },
-                    //new { process = "化成", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "二次注液", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "分容", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "补电", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "包胶", yield = Random.Shared.Next(1000,1500)},
-                    //new { process = "组盘", yield = Random.Shared.Next(1000,1500)}
-
-                     new { process = "正极合浆", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
+                    new { process = "正极合浆", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
                     new { process = "正极涂布",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
                     new { process = "正极辊分", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
                     new { process = "正极激光切", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
@@ -63,25 +45,7 @@ namespace WebAppTest1.Controllers
             else 
             {
                 var data = new[]
-                {
-                    //new { process = "正极合浆",yield =0 },
-                    //new { process = "正极涂布", yield =0  },
-                    //new { process = "正极辊分", yield =0  },
-                    //new { process = "正极激光切", yield =0  },
-                    //new { process = "负极合浆", yield =0 },
-                    //new { process = "负极涂布", yield =0  },
-                    //new { process = "负极辊分", yield =0 },
-                    //new { process = "负极激光切", yield =0  },
-                    //new { process = "叠片", yield =0  },
-                    //new { process = "组装", yield =0  },
-                    //new { process = "一次注液", yield =0  },
-                    //new { process = "化成", yield =0 },
-                    //new { process = "二次注液", yield =0  },
-                    //new { process = "分容", yield =0  },
-                    //new { process = "补电", yield =0  },
-                    //new { process = "包胶", yield =0  },
-                    //new { process = "组盘", yield =0  }
-
+                {                  
                     new { process = "正极合浆", plan = 0,actual=0 },
                     new { process = "正极涂布", plan = 0,actual=0 },
                     new { process = "正极辊分", plan = 0,actual=0 },
