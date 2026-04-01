@@ -256,8 +256,34 @@
                                 label: {
                                     show: true,
                                     position: 'top',
-                                    color: '#fff',
-                                    fontWeight: 'bold'
+                                    fontWeight: 'bold',
+                                    formatter: function (params) {
+                                        const idx = params.dataIndex;
+                                        const plan = data[idx].plan;
+                                        const actual = data[idx].actual;
+
+                                        if (actual < plan) {
+                                            return `{red|${actual}}`;
+                                        }
+                                        if (actual > plan) {
+                                            return `{green|${actual}}`;
+                                        }
+                                        return `{white|${actual}}`;
+                                    },
+                                    rich: {
+                                        red: {
+                                            color: '#ff4d4f',
+                                            fontWeight: 'bold'
+                                        },
+                                        green: {
+                                            color: '#52c41a',
+                                            fontWeight: 'bold'
+                                        },
+                                        white: {
+                                            color: '#fff',
+                                            fontWeight: 'bold'
+                                        }
+                                    }
                                 },
                                 z: 2
                             }

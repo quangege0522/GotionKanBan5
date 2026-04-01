@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n5kyxuewfc</Fingerprint>
-      <Integrity>i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0=</Integrity>
+      <Fingerprint>tuiyd2x9wg</Fingerprint>
+      <Integrity>C6dTayNcIirNxRYUBkAeuFz1hdyM33lAuWv2x894Ya0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\process_yield.html'))</OriginalItemSpec>

@@ -16,23 +16,23 @@ namespace WebAppTest1.Controllers
             {
                 var data = new[]
                 {
-                    new { process = "正极合浆", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "正极涂布",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "正极辊分", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "正极激光切", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "负极合浆", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "负极涂布", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "负极辊分", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "负极激光切",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "叠片",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "组装",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "一次注液", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500) },
-                    new { process = "化成", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "二次注液", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "分容", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "补电",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "包胶",plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)},
-                    new { process = "组盘", plan = Random.Shared.Next(1000,1500),actual = Random.Shared.Next(1000,1500)}
+                    new { process = "正极合浆", plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "正极涂布",plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "正极辊分", plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "正极激光切", plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "负极合浆", plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "负极涂布", plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "负极辊分", plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "负极激光切",plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "叠片",plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "组装",plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "一次注液", plan = 1250,actual = Random.Shared.Next(1000,1500) },
+                    new { process = "化成", plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "二次注液", plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "分容", plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "补电",plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "包胶",plan = 1250,actual = Random.Shared.Next(1000,1500)},
+                    new { process = "组盘", plan = 1250,actual = Random.Shared.Next(1000,1500)}
 
                  };
 
