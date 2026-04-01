@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "process_yield.ajwc8nt6ux.html",
+      "AssetFile": "process_yield.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9390"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Mar 2026 09:01:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajwc8nt6ux"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="
+        },
+        {
+          "Name": "label",
+          "Value": "process_yield.html"
+        }
+      ]
+    },
+    {
+      "Route": "process_yield.html",
+      "AssetFile": "process_yield.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9390"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Mar 2026 09:01:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="
+        }
+      ]
+    }
+  ]
+}

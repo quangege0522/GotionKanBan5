@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "xLSqo5xICC4E15Fot7tPBSIjlJVRrvoSAFcEMiVvZJc=",
+  "Source": "WebAppTest1",
+  "BasePath": "_content/WebAppTest1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAppTest1\\wwwroot",
+      "Source": "WebAppTest1",
+      "ContentRoot": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\",
+      "BasePath": "_content/WebAppTest1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+      "SourceId": "WebAppTest1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\",
+      "BasePath": "_content/WebAppTest1",
+      "RelativePath": "process_yield#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ajwc8nt6ux",
+      "Integrity": "tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\process_yield.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "process_yield.ajwc8nt6ux.html",
+      "AssetFile": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9390"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Mar 2026 09:01:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajwc8nt6ux"
+        },
+        {
+          "Name": "label",
+          "Value": "process_yield.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="
+        }
+      ]
+    },
+    {
+      "Route": "process_yield.html",
+      "AssetFile": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9390"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 31 Mar 2026 09:01:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>国轩5厂数字化看板(测试版)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "Microsoft YaHei";
+            /*background: #f5f7fa;*/
+            background-color: #0b1c2d;
+            color: #ffffff;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #chart {
+            width: 100%;
+            height: 420px;
+            background: #122b45;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <h2 id="pageTitle" style="margin-left:30px; color:#fff;">铁锂电池生产产量</h2>
+
+
+    <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:15px;
+    ">
+
+        <!-- 左侧：产线 -->
+        <div>
+            <label style="color:#fff;">产线：</label>
+            <select id="lineSelect" style="padding:6px 10px;">
+                <option value="">-- 请选择 --</option>
+            </select>
+        </div>
+
+        <!-- 右侧：时间 -->
+        <div>
+            <label style="color:#fff;">开始时间：</label>
+            <input id="startTime"
+                   type="datetime-local"
+                   step="60"
+                   style="padding:6px 10px;" />
+
+            <label style="color:#fff; margin-left:10px;">结束时间：</label>
+            <input id="endTime"
+                   type="datetime-local"
+                   step="60"
+                   style="padding:6px 10px;" />
+        </div>
+
+    </div>
+
+    <table id="dataTable" 
+           style="width:100%;
+                  border-collapse:collapse;
+                  margin-bottom:15px;
+                  background:#122b45;
+                  color:#fff;
+                  text-align:center;
+">
+        <thead>
+            <tr id="headerRow" style="background:#1e3c5a;">
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="valueRow">
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="chart"/>
+
+    <script>
+        const chart = echarts.init(document.getElementById('chart'));
+        const select = document.getElementById('lineSelect');
+
+        fetch(location.origin + '/api/production/lines')
+            .then(res => res.json())
+            .then(res => {
+                res.data.forEach(line => {
+
+                    lineMap[line.tenantID] = line.name;
+
+                    const opt = document.createElement('option');
+                    opt.value = line.tenantID;
+                    opt.textContent = line.name;
+                    select.appendChild(opt);
+                });
+            });
+
+        fetch(location.origin + '/api/production/yield')
+            .then(res => res.json())
+            .then(res => {
+                const data = res.data;
+
+                const option = {
+                    tooltip: { trigger: 'axis' },
+                    xAxis: {
+                        type: 'category',
+                        data: data.map(d => d.process)
+                    },
+                    yAxis: {
+                        type: 'value',
+                        name: '产量'
+                    },
+                    series: [{
+                        name: '产量',
+                        type: 'bar',
+                        data: data.map(d => d.yield),
+                        label: { show: true, position: 'top' }
+                    }]
+                };
+
+                chart.setOption(option);
+            });
+
+        window.addEventListener('resize', () => chart.resize());
+
+        let lineMap = {};
+
+        function loadChart(tenantID) {
+            let url = location.origin + '/api/production/yield';
+            if (tenantID) {
+                url += `?tenantID=${tenantID}`;
+            }
+
+            fetch(url)
+                .then(res => res.json())
+                .then(res => {
+                    const data = res.data;
+
+                    const headerRow = document.getElementById('headerRow');
+                    const valueRow = document.getElementById('valueRow');
+
+                    headerRow.innerHTML = '';
+                    valueRow.innerHTML = '';
+
+                    
+                    data.forEach(d => {
+                        const th = document.createElement('th');
+                        th.textContent = d.process;
+                        th.style.cssText =
+                            'padding:8px;border:1px solid #2c4a6b;';
+                        headerRow.appendChild(th);
+                    });
+
+                    
+                    data.forEach(d => {
+                        const td = document.createElement('td');
+                        td.textContent = d.yield;
+                        td.style.cssText =
+                            'padding:8px;border:1px solid #2c4a6b;';
+                        valueRow.appendChild(td);
+                    });
+
+                    const option = {
+                        backgroundColor: '#122b45',
+                        tooltip: { trigger: 'axis' },
+                        xAxis: {
+                            type: 'category',
+                            data: data.map(d => d.process),
+                            axisLabel: {
+                                color: '#fff',
+                                interval: 0,
+                                formatter: val => val.split('').join('\n')
+                            }
+                        },
+                        yAxis: {
+                            type: 'value',
+                            axisLabel: { color: '#fff' }
+                        },
+                        series: [
+                           
+                            {
+                                name: '产量',
+                                type: 'bar',
+                                data: data.map(d => d.yield),
+                                barWidth: '45%',
+                                barGap: '-100%',
+
+                                itemStyle: {
+                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                        { offset: 0, color: '#1f4fa3' },
+                                        { offset: 1, color: '#163a7a' }
+                                    ]),
+
+                                    
+                                    borderColor: '#0d2a4d',
+                                    borderWidth: 1,
+
+                                    borderRadius: [0, 0, 0, 0],
+
+                                    shadowColor: 'rgba(0,0,0,0.45)',
+                                    shadowBlur: 6,
+                                    shadowOffsetY: 4
+                                },
+
+                                z: 1
+                            },
+
+                            
+                            {
+                                name: '顶面',
+                                type: 'bar',
+                                data: data.map(d => d.yield),
+                                barWidth: '45%',
+                                barGap: '-100%',
+
+                                itemStyle: {
+                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                        { offset: 0, color: '#5a9cff' },
+                                        { offset: 1, color: '#3b7dd8' }
+                                    ]),
+
+                                    
+                                    borderColor: '#7cb9ff',
+                                    borderWidth: 1,
+
+                                    borderRadius: [4, 4, 0, 0]
+                                },
+
+                                label: {
+                                    show: true,
+                                    position: 'top',
+                                    color: '#fff',
+                                    fontWeight: 'bold'
+                                },
+
+                                z: 2
+                            }
+                        ]
+                    };
+
+                    chart.setOption(option, false);
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert('加载产量失败');
+                });
+        }
+
+
+        select.addEventListener('change', () => {
+
+            const title = document.getElementById('pageTitle');
+            const name = lineMap[select.value];
+
+            title.textContent = name
+                ? `${name} - 各工序产量统计`
+                : '各工序产量统计';
+
+            loadChart(select.value);
+        });
+
+        window.onload = () => {
+            if (select.options.length > 1) {
+                select.selectedIndex = 1;
+                select.dispatchEvent(new Event('change'));
+            }
+        };
+    </script>
+
+</body>
+</html>
