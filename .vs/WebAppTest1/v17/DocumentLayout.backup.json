@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\",
+  "WorkspaceRootPath": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\webapptest1\\wwwroot\\process_yield.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\kanbantest\\gotionkanban5\\wwwroot\\process_yield.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:wwwroot\\process_yield.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\webapptest1\\controllers\\productioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\kanbantest\\gotionkanban5\\controllers\\productioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:controllers\\productioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\webapptest1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\kanbantest\\gotionkanban5\\webapptest1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:webapptest1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\kanbantest\\gotionkanban5\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\webapptest1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\kanbantest\\gotionkanban5\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\webapptest1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\kanbantest\\gotionkanban5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|d:\\code(work)\\2026\\apptest\\webapptest1\\webapptest1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{90D41C9B-7764-4FA1-9BC0-D217AB144FE0}|WebAppTest1.csproj|solutionrelative:webapptest1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,38 +47,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-31T07:38:23.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T02:04:19.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T02:04:19.496Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "process_yield.html",
-              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\process_yield.html",
               "RelativeDocumentMoniker": "wwwroot\\process_yield.html",
-              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\process_yield.html",
               "RelativeToolTip": "wwwroot\\process_yield.html",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAowHAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAqwPAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-03-31T00:27:29.209Z",
               "EditorCaption": ""
@@ -87,40 +73,51 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ProductionController.cs",
-              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Controllers\\ProductionController.cs",
+              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Controllers\\ProductionController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductionController.cs",
-              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Controllers\\ProductionController.cs",
+              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Controllers\\ProductionController.cs",
               "RelativeToolTip": "Controllers\\ProductionController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCIAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAswGQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T00:22:26.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Program.cs",
+              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\Program.cs",
+              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAASwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T00:25:17.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T00:25:17.303Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WebAppTest1",
-              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\WebAppTest1.csproj",
+              "DocumentIndex": 2,
+              "Title": "WebAppTest1.csproj",
+              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\WebAppTest1.csproj",
               "RelativeDocumentMoniker": "WebAppTest1.csproj",
-              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\WebAppTest1.csproj",
+              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\WebAppTest1.csproj",
               "RelativeToolTip": "WebAppTest1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-03-31T00:25:07.709Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-31T07:38:23.58Z"
             }
           ]
         }

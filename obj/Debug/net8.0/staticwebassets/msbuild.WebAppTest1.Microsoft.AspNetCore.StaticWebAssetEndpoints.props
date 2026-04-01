@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/WebAppTest1/process_yield.ajwc8nt6ux.html">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\process_yield.html'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ajwc8nt6ux"},{"Name":"integrity","Value":"sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="},{"Name":"label","Value":"_content/WebAppTest1/process_yield.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9390"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 31 Mar 2026 09:01:25 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebAppTest1/process_yield.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\process_yield.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9390"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\u0022"},{"Name":"Last-Modified","Value":"Tue, 31 Mar 2026 09:01:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13304"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Apr 2026 01:14:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WebAppTest1/process_yield.n5kyxuewfc.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\process_yield.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n5kyxuewfc"},{"Name":"integrity","Value":"sha256-i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0="},{"Name":"label","Value":"_content/WebAppTest1/process_yield.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13304"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Apr 2026 01:14:22 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xLSqo5xICC4E15Fot7tPBSIjlJVRrvoSAFcEMiVvZJc=",
+  "Hash": "abBK7slBHAar5E8c4NPmvOsytqLVNBjHJ6R1PljuIkw=",
   "Source": "WebAppTest1",
   "BasePath": "_content/WebAppTest1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAppTest1\\wwwroot",
       "Source": "WebAppTest1",
-      "ContentRoot": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\",
+      "ContentRoot": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\",
       "BasePath": "_content/WebAppTest1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+      "Identity": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\process_yield.html",
       "SourceId": "WebAppTest1",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\",
+      "ContentRoot": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\",
       "BasePath": "_content/WebAppTest1",
       "RelativePath": "process_yield#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ajwc8nt6ux",
-      "Integrity": "tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=",
+      "Fingerprint": "n5kyxuewfc",
+      "Integrity": "i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\process_yield.html"
@@ -40,53 +40,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "process_yield.ajwc8nt6ux.html",
-      "AssetFile": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9390"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 31 Mar 2026 09:01:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ajwc8nt6ux"
-        },
-        {
-          "Name": "label",
-          "Value": "process_yield.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="
-        }
-      ]
-    },
-    {
       "Route": "process_yield.html",
-      "AssetFile": "D:\\Code(Work)\\2026\\AppTest\\WebAppTest1\\wwwroot\\process_yield.html",
+      "AssetFile": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\process_yield.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -95,7 +50,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9390"
+          "Value": "13304"
         },
         {
           "Name": "Content-Type",
@@ -103,11 +58,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A=\""
+          "Value": "\"i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Mar 2026 09:01:25 GMT"
+          "Value": "Wed, 01 Apr 2026 01:14:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117,7 +72,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tkPn32J6N9QO5RRKmi5D7AIi6Rr/pf/U0vtmvdnY15A="
+          "Value": "sha256-i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0="
+        }
+      ]
+    },
+    {
+      "Route": "process_yield.n5kyxuewfc.html",
+      "AssetFile": "D:\\Code(Work)\\2026\\AppTest\\KanBanTest\\GotionKanBan5\\wwwroot\\process_yield.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Apr 2026 01:14:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n5kyxuewfc"
+        },
+        {
+          "Name": "label",
+          "Value": "process_yield.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i3P/sHOA6gBY5n/5l4pPBWAfZ7McMcUMHYc4Cn7bwv0="
         }
       ]
     }

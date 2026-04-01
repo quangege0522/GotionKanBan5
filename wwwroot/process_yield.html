@@ -82,9 +82,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="valueRow">
-                
-            </tr>
+            <tr id="planRow"></tr>               
+            <tr id="actualRow"></tr>
         </tbody>
     </table>
 
@@ -150,10 +149,14 @@
                     const data = res.data;
 
                     const headerRow = document.getElementById('headerRow');
-                    const valueRow = document.getElementById('valueRow');
+                    //const valueRow = document.getElementById('valueRow');
+                    const planRow = document.getElementById('planRow');
+                    const actualRow = document.getElementById('actualRow');
 
                     headerRow.innerHTML = '';
-                    valueRow.innerHTML = '';
+                    //valueRow.innerHTML = '';
+                    planRow.innerHTML = '';
+                    actualRow.innerHTML = '';
 
                     
                     data.forEach(d => {
@@ -166,16 +169,43 @@
 
                     
                     data.forEach(d => {
-                        const td = document.createElement('td');
-                        td.textContent = d.yield;
-                        td.style.cssText =
-                            'padding:8px;border:1px solid #2c4a6b;';
-                        valueRow.appendChild(td);
+                        //const td = document.createElement('td');
+                        //td.textContent = d.yield;
+                        //td.style.cssText =
+                        //    'padding:8px;border:1px solid #2c4a6b;';
+                        //valueRow.appendChild(td);
+
+                        // 计划
+                        const tdPlan = document.createElement('td');
+                        tdPlan.textContent = d.plan;
+                        tdPlan.style.cssText = 'padding:6px;border:1px solid #2c4a6b;color:#ffd966;';
+                        planRow.appendChild(tdPlan);
+
+                        // 实际
+                        const tdActual = document.createElement('td');
+                        tdActual.textContent = d.actual;
+                        tdActual.style.cssText = 'padding:6px;border:1px solid #2c4a6b;color:#5a9cff;';
+                        actualRow.appendChild(tdActual);
                     });
+
+                   
 
                     const option = {
                         backgroundColor: '#122b45',
                         tooltip: { trigger: 'axis' },
+
+                        legend: {
+                            data: ['计划', '实际'],
+                            top: 10,
+                            right: 20,
+                            textStyle: {
+                                color: '#fff',
+                                fontSize: 14
+                            },
+                            itemWidth: 20,
+                            itemHeight: 12
+                        },
+
                         xAxis: {
                             type: 'category',
                             data: data.map(d => d.process),
@@ -189,54 +219,44 @@
                             type: 'value',
                             axisLabel: { color: '#fff' }
                         },
-                        series: [
-                           
-                            {
-                                name: '产量',
-                                type: 'bar',
-                                data: data.map(d => d.yield),
-                                barWidth: '45%',
-                                barGap: '-100%',
 
+                        series: [
+                            // ✅ 计划（浅黄）
+                            {
+                                name: '计划',
+                                type: 'bar',
+                                data: data.map(d => d.plan),
+                                barWidth: '35%',
                                 itemStyle: {
                                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                        { offset: 0, color: '#1f4fa3' },
-                                        { offset: 1, color: '#163a7a' }
+                                        { offset: 0, color: '#ffd966' },
+                                        { offset: 1, color: '#b38f00' }
                                     ]),
-
-                                    
-                                    borderColor: '#0d2a4d',
+                                    borderColor: '#8a6d00',
                                     borderWidth: 1,
-
-                                    borderRadius: [0, 0, 0, 0],
-
-                                    shadowColor: 'rgba(0,0,0,0.45)',
-                                    shadowBlur: 6,
+                                    borderRadius: [4, 4, 0, 0],
+                                    shadowColor: 'rgba(0,0,0,0.3)',
                                     shadowOffsetY: 4
                                 },
 
                                 z: 1
                             },
-
-                            
+                            // ✅ 实际（工业蓝）
                             {
-                                name: '顶面',
+                                name: '实际',
                                 type: 'bar',
-                                data: data.map(d => d.yield),
-                                barWidth: '45%',
-                                barGap: '-100%',
-
+                                data: data.map(d => d.actual),
+                                barWidth: '35%',
                                 itemStyle: {
                                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                                         { offset: 0, color: '#5a9cff' },
-                                        { offset: 1, color: '#3b7dd8' }
+                                        { offset: 1, color: '#1f4fa3' }
                                     ]),
-
-                                    
-                                    borderColor: '#7cb9ff',
+                                    borderColor: '#3b7dd8',
                                     borderWidth: 1,
-
-                                    borderRadius: [4, 4, 0, 0]
+                                    borderRadius: [4, 4, 0, 0],
+                                    shadowColor: 'rgba(0,0,0,0.3)',
+                                    shadowOffsetY: 4
                                 },
 
                                 label: {
@@ -245,10 +265,70 @@
                                     color: '#fff',
                                     fontWeight: 'bold'
                                 },
-
                                 z: 2
                             }
                         ]
+
+                        //series: [
+                           
+                        //    {
+                        //        name: '产量',
+                        //        type: 'bar',
+                        //        data: data.map(d => d.yield),
+                        //        barWidth: '45%',
+                        //        barGap: '-100%',
+
+                        //        itemStyle: {
+                        //            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        //                { offset: 0, color: '#1f4fa3' },
+                        //                { offset: 1, color: '#163a7a' }
+                        //            ]),
+
+                                    
+                        //            borderColor: '#0d2a4d',
+                        //            borderWidth: 1,
+
+                        //            borderRadius: [0, 0, 0, 0],
+
+                        //            shadowColor: 'rgba(0,0,0,0.45)',
+                        //            shadowBlur: 6,
+                        //            shadowOffsetY: 4
+                        //        },
+
+                        //        z: 1
+                        //    },
+
+                            
+                        //    {
+                        //        name: '顶面',
+                        //        type: 'bar',
+                        //        data: data.map(d => d.yield),
+                        //        barWidth: '45%',
+                        //        barGap: '-100%',
+
+                        //        itemStyle: {
+                        //            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        //                { offset: 0, color: '#5a9cff' },
+                        //                { offset: 1, color: '#3b7dd8' }
+                        //            ]),
+
+                                    
+                        //            borderColor: '#7cb9ff',
+                        //            borderWidth: 1,
+
+                        //            borderRadius: [4, 4, 0, 0]
+                        //        },
+
+                        //        label: {
+                        //            show: true,
+                        //            position: 'top',
+                        //            color: '#fff',
+                        //            fontWeight: 'bold'
+                        //        },
+
+                        //        z: 2
+                        //    }
+                        //]
                     };
 
                     chart.setOption(option, false);
