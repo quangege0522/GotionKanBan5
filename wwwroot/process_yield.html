@@ -209,10 +209,26 @@
                                 formatter: val => val.split('').join('\n')
                             }
                         },
-                        yAxis: {
+
+                        // ✅ 左侧：产量
+                        yAxis: [{
                             type: 'value',
+                            name: '产量',
+                            max:2000,
                             axisLabel: { color: '#fff' }
                         },
+                        // ✅ 右侧：良品率（%）
+                        {
+                            type: 'value',
+                            name: '良品率（%）',
+                            min: 0,
+                            max: 100,
+                            axisLabel: {
+                                color: '#52c41a',
+                                formatter: '{value}%'
+                            },
+                            splitLine: { show: false }
+                        }],
 
                         series: [
                             // ✅ 计划（浅黄）
@@ -252,7 +268,6 @@
                                     shadowColor: 'rgba(0,0,0,0.3)',
                                     shadowOffsetY: 4
                                 },
-
                                 label: {
                                     show: true,
                                     position: 'top',
@@ -286,6 +301,23 @@
                                     }
                                 },
                                 z: 2
+                            },
+                            // ✅ 良品率折线（上方）
+                            {
+                                name: '良品率',
+                                type: 'line',
+                                data: data.map(d => d.yieldRate * 100),
+                                yAxisIndex: 1,
+                                smooth: true,
+                                symbol: 'circle',
+                                symbolSize: 8,
+                                lineStyle: { color: '#52c41a', width: 3 },
+                                itemStyle: { color: '#52c41a' },
+                                label: {
+                                    show: true,
+                                    formatter: '{c}%',
+                                    color: '#52c41a'
+                                }
                             }
                         ]
 
