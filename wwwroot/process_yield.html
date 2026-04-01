@@ -66,6 +66,21 @@
                    style="padding:6px 10px;" />
         </div>
 
+        <div style="display:flex;align-items:center;gap:15px;">
+            <label style="color:#fff;">
+                <input type="checkbox" id="chkPlan" checked>
+                计划
+            </label>
+            <label style="color:#fff;">
+                <input type="checkbox" id="chkActual" checked>
+                实际
+            </label>
+            <label style="color:#fff;">
+                <input type="checkbox" id="chkYield" checked>
+                良品率
+            </label>
+        </div>
+
     </div>
 
     <table id="dataTable" 
@@ -92,6 +107,12 @@
     <script>
         const chart = echarts.init(document.getElementById('chart'));
         const select = document.getElementById('lineSelect');
+
+        const legendSelected = {
+            '计划': true,
+            '实际': true,
+            '良品率': true
+        };
 
         fetch(location.origin + '/api/production/lines')
             .then(res => res.json())
@@ -189,7 +210,7 @@
                         tooltip: { trigger: 'axis' },
 
                         legend: {
-                            data: ['计划', '实际'],
+                            data: ['计划', '实际', '良品率'],
                             top: 10,
                             right: 20,
                             textStyle: {
@@ -331,6 +352,23 @@
                 });
         }
 
+        function updateLegend() {
+            legendSelected['计划'] = document.getElementById('chkPlan').checked;
+            legendSelected['实际'] = document.getElementById('chkActual').checked;
+            legendSelected['良品率'] = document.getElementById('chkYield').checked;
+
+            chart.setOption({
+                legend: {
+                    selected: legendSelected
+                }
+            }, false);
+        }
+
+        document.getElementById('chkPlan').addEventListener('change', updateLegend);
+        document.getElementById('chkActual').addEventListener('change', updateLegend);
+        document.getElementById('chkYield').addEventListener('change', updateLegend);
+
+        
 
         select.addEventListener('change', () => {
 
